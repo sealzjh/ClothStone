@@ -14,7 +14,6 @@ if [ -f "$DADA_ERROR_LOG" ];then
     TAIL_OFFSET=$((CURRENT_LINENUM - LAST_LINENUM))
 
     if [ $TAIL_OFFSET -gt 0 ];then
-        echo $TAIL_OFFSET
         tail $DADA_ERROR_LOG -n$TAIL_OFFSET > $ONE_SECOND_LOG
 
         ERROR_NUM=`cat $ONE_SECOND_LOG |wc -l`
@@ -22,8 +21,7 @@ if [ -f "$DADA_ERROR_LOG" ];then
 
         if [ $ERROR_NUM -gt 0 ];then
             SUBJECT="Nginx error警告"
-            CONTENT=${CURRENT_TIME}" Nginx error : "${ERROR_NUM}"<br><br>"${ERROR_LOG}
-            python $MAIL_SEND_PYFILE "$RECEIVER" "$SUBJECT" "$CONTENT"
+            CONTENT=${CURRENT_TIME}" Nginx error : "${ERROR_NUM}"<br><br>"${ERROR_LOG}            python $MAIL_SEND_PYFILE "$RECEIVER" "$SUBJECT" "$CONTENT"
 
         fi
     fi
