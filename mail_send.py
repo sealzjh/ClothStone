@@ -25,7 +25,7 @@ def connectToSMTPServer():
     import smtplib,mimetypes
     smtp=smtplib.SMTP()
     smtp.connect("smtp.exmail.qq.com")
-    smtp.login("notice@imdada.cn","dada13579")
+    smtp.login("notice@alan.cn","123456")
     return smtp
 
 sendMail(sys.argv)
