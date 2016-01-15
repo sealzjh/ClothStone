@@ -4,7 +4,7 @@ ACCESS_LOG=/data/log/mysql/mysql-slow.log-$DAY.gz
 MAIL_SEND_PYFILE=/home/ubuntu/potter/mail_send.py
 TMP_FILE=/tmp/tmpslow.log
 #MYSQLSLA=/home/ubuntu/apps/mysqlsla-2.03/bin/mysqlsla
-RECEIVER="tech@imdada.cn"
+RECEIVER="tech@alan.cn"
 
 if [ -f "$ACCESS_LOG" ];then
         zcat $ACCESS_LOG > $TMP_FILE
