@@ -3,7 +3,7 @@ DADA_ERROR_LOG=/var/log/nginx/dada_error_log
 LAST_LINE_LOG=/tmp/nginxerrorlinenum.log
 ONE_SECOND_LOG=/tmp/tmpnginxerror.log
 MAIL_SEND_PYFILE=/home/ubuntu/potter/mail_send.py
-RECEIVER="tech@imdada.cn"
+RECEIVER="tech@alan.cn"
 
 CURRENT_TIME=`date "+%Y-%m-%d %H:%M:%S"`
 
