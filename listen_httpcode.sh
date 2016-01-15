@@ -5,7 +5,7 @@ DADA_ACCESS_LOG=/var/log/nginx/dada_access_log
 LAST_LINE_LOG=/home/ubuntu/potter/linenum
 MAIL_SEND_PYFILE=/home/ubuntu/potter/mail_send.py
 ONE_SECOND_LOG=/home/ubuntu/potter/one_second.log
-RECEIVER="tech@imdada.cn"
+RECEIVER="tech@alan.cn"
 
 CURRENT_TIME=`date "+%Y-%m-%d %H:%M:%S"` 
 
