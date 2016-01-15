@@ -1,6 +1,6 @@
 #!/bin/bash
 MAIL_SEND_PYFILE=/home/ubuntu/potter/mail_send.py
-RECEIVER="alan@imdada.cn"
+RECEIVER="alan@alan.cn"
 
 NOWTIME=`date +%s`
 HEARTBEAT_TIME=`cat t.log`
