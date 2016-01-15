@@ -2,7 +2,7 @@
 DAY=`date +"%Y%m%d" -d "-1 day"`
 ACCESS_LOG=/var/log/nginx/dada_access_log-$DAY.gz
 MAIL_SEND_PYFILE=/home/ubuntu/potter/mail_send.py
-RECEIVER="tech@imdada.cn"
+RECEIVER="tech@alan.cn"
 
 if [ -f "$ACCESS_LOG" ];then
     NUM301=`zcat $ACCESS_LOG |awk '{if ($9 == 301){print $0}}' |wc -l`
